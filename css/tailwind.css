@@ -7,3 +7,7 @@
         @apply w-11/12 mx-auto py-5;
     }
 }
+
+.city_link:hover .angle_down>i{
+    transform: rotate(180deg); 
+}

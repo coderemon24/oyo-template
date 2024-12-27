@@ -6,11 +6,17 @@
     <title>Oyo-Template</title>
     <!--- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
+    <!---- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!---- daterangepicker css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!---- tailwind css -->
     <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body>
+    <!--- header -->
     <header class="header">
         <div class="
         bg-white
@@ -21,7 +27,7 @@
                 lg:flex
                 lg:justify-between
                 lg:items-center
-                lg:h-[5rem]
+                lg:h-[4rem]
                 ">
                     <h1 class="
                     font-bold
@@ -34,7 +40,7 @@
                     lg:w-[18rem]
                     lg:text-start
                     lg:text-5xl
-                    lg:h-[5rem]
+                    lg:h-[100%]
                     lg:flex
                     lg:items-center
                     ">Oyo</h1>
@@ -58,7 +64,7 @@
                             items-center
                             lg:border-l-[1px]
                             border-gray-400
-                            lg:h-[5rem]
+                            lg:h-[4rem]
                             lg:flex
                             lg:items-center
                             lg:pl-4
@@ -89,7 +95,7 @@
                             items-center
                             border-l-[1px]
                             border-gray-400
-                            lg:h-[5rem]
+                            lg:h-[4rem]
                             lg:flex
                             lg:items-center
                             lg:pl-4
@@ -120,7 +126,7 @@
                             lg:pl-4
                              border-l-[1px]
                             border-gray-400
-                            lg:h-[5rem]
+                            lg:h-[4rem]
                             ">
                                 <div class="
                                 text-2xl
@@ -142,6 +148,596 @@
                 </div>
             </div>
         </div>
+        
+        <!--- navbar  -->
+        <section class="bg-gray-100
+        h-14
+        flex
+        items-center
+        ">
+            <div class="container">
+                
+                <nav class="
+                relative
+                ">
+                    <div class="
+                    text-2xl
+                    lg:hidden
+                    cursor-pointer
+                    flex
+                    justify-between
+                    ">
+                        <h1 class="
+                        font-bold
+                        text-3xl
+                        uppercase
+                        ">Oyo</h1>
+                        <button class="
+                        text-2xl
+                        cursor-pointer
+                        navbar_btn
+                        ">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                    <ul class="
+                    font-roboto
+                    absolute
+                    lg:static
+                    top-[3.5rem]
+                    -left-0
+                    w-full
+                    gap-4
+                    lg:flex
+                    lg:flex-row
+                    transition-all
+                    duration-300
+                    ease-in-out
+                    hidden
+                    navbar_list
+                    bg-white
+                    lg:bg-transparent
+                    p-4
+                    shadow-md
+                    rounded
+                    ">
+                        <li class="
+                        group
+                        city_link
+                        lg:relative
+                        "><a href="#" class="
+                            font-roboto
+                            
+                            ">Dhaka <span class="
+                            angle_down
+                            "><i class=" fa fa-angle-down transition-transform duration-300" aria-hidden="true"></i></span></a>
+                            <ul class="
+                            pl-4
+                            lg:pl-0
+                            lg:bg-white
+                            lg:w-[300px]
+                            w-full
+                            hidden
+                            group-hover:block
+                            transition-all
+                            duration-300
+                            ease-in-out
+                            lg:absolute
+                            lg:shadow-md
+                            lg:rounded
+                            ">
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Mirpur</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Dhanmondi</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Gulshan</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Badda</a></li>
+                            </ul>
+                        </li>
+                        <li class="
+                        group
+                        city_link
+                        lg:relative
+                        "><a href="#" class="
+                            font-roboto
+                            
+                            ">Chittagong <span class="
+                            angle_down
+                            "><i class=" fa fa-angle-down transition-transform duration-300" aria-hidden="true"></i></span></a>
+                            <ul class="
+                            pl-4
+                            lg:pl-0
+                            lg:bg-white
+                            lg:w-[300px]
+                            w-full
+                            hidden
+                            group-hover:block
+                            transition-all
+                            duration-300
+                            ease-in-out
+                            lg:absolute
+                            lg:shadow-md
+                            lg:rounded
+                            ">
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Mirpur</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Dhanmondi</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Gulshan</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Badda</a></li>
+                            </ul>
+                        </li>
+                        <li class="
+                        group
+                        city_link
+                        lg:relative
+                        "><a href="#" class="
+                            font-roboto
+                            
+                            ">Rangpur <span class="
+                            angle_down
+                            "><i class=" fa fa-angle-down transition-transform duration-300" aria-hidden="true"></i></span></a>
+                            <ul class="
+                            pl-4
+                            lg:pl-0
+                            lg:bg-white
+                            lg:w-[300px]
+                            w-full
+                            hidden
+                            group-hover:block
+                            transition-all
+                            duration-300
+                            ease-in-out
+                            lg:absolute
+                            lg:shadow-md
+                            lg:rounded
+                            ">
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Mirpur</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Dhanmondi</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Gulshan</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Badda</a></li>
+                            </ul>
+                        </li>
+                        <li class="
+                        group
+                        city_link
+                        lg:relative
+                        "><a href="#" class="
+                            font-roboto
+                            
+                            ">Barisal <span class="
+                            angle_down
+                            "><i class=" fa fa-angle-down transition-transform duration-300" aria-hidden="true"></i></span></a>
+                            <ul class="
+                            pl-4
+                            lg:pl-0
+                            lg:bg-white
+                            lg:w-[300px]
+                            w-full
+                            hidden
+                            group-hover:block
+                            transition-all
+                            duration-300
+                            ease-in-out
+                            lg:absolute
+                            lg:shadow-md
+                            lg:rounded
+                            ">
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Mirpur</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Dhanmondi</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Gulshan</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Badda</a></li>
+                            </ul>
+                        </li>
+                        <li class="
+                        group
+                        city_link
+                        lg:relative
+                        "><a href="#" class="
+                            font-roboto
+                            
+                            ">Rajshahi <span class="
+                            angle_down
+                            "><i class=" fa fa-angle-down transition-transform duration-300" aria-hidden="true"></i></span></a>
+                            <ul class="
+                            pl-4
+                            lg:pl-0
+                            lg:bg-white
+                            lg:w-[300px]
+                            w-full
+                            hidden
+                            group-hover:block
+                            transition-all
+                            duration-300
+                            ease-in-out
+                            lg:absolute
+                            lg:shadow-md
+                            lg:rounded
+                            ">
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Mirpur</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Dhanmondi</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Gulshan</a></li>
+                                <li class="
+                                hover:bg-gray-100
+                                transition-all
+                                duration-300
+                                lg:pl-4
+                                lg:leading-8
+                                "><a href="#" class="">Badda</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        
+        <!---search bar-->
+        <section class="
+        h-52
+        flex
+        items-center
+        "
+        style="background: url('./images/search_bg.png');"
+        >
+            <div class="container">
+                <div class="">
+                    <div class="
+                    flex
+                    lg:w-2/3
+                    mx-auto
+                    ">
+                        <input class="
+                        h-12
+                        lg:h-14
+                        w-28
+                        lg:w-full
+                        px-2
+                        lg:px-4
+                        lg:scroll-px-48
+                        focus:outline-none
+                        rounded-l
+                        " type="search" name="search" value="Cox's Bazar">
+                        <input class="
+                        h-12
+                        lg:w-full
+                        lg:px-4
+                        px-2
+                        lg:h-14
+                        w-28
+                        border-l-2
+                        border-gray-200
+                        focus:outline-none
+                        " type="text" id="dates" name="dates" value="01/01/2023 - 01/01/2023">
+                        <p class="
+                        bg-white
+                        h-12
+                        
+                        flex
+                        items-center
+                        gap-2
+                        border-l-2
+                        border-gray-200
+                        px-2
+                        lg:px-4
+                        lg:w-full
+                        lg:h-14
+                        ">
+                            <span>1 room</span>
+                            <span>2 guests</span>
+                        </p>
+                        <button class="
+                        bg-green-500
+                        h-12
+                        lg:h-14
+                        px-2
+                        lg:px-12
+                        text-white
+                        uppercase
+                        font-roboto
+                        rounded-r
+                        ">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
+    <!---- main ---->
+    <main id="app">
+        <!--- top ads banner -->
+        <section class="">
+            <div class="container">
+                <div class="
+                py-4
+                lg:py-12
+                ">
+                    <img class="
+                    w-full
+                    rounded
+                    mb-5
+                    lg:mb-16
+                    " src="./images/top_ads.png" alt="">
+                    
+                    <img class="
+                    rounded-lg
+                    w-full
+                    " src="./images/bottom_ads.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!---- subscribe button --->
+        <section class="">
+            <div class="container">
+                <div class="
+                border
+                border-gray-200
+                rounded-xl
+                h-36
+                lg:flex
+                lg:justify-between
+                lg:items-center
+                lg:px-10
+                ">
+                    <div class="
+                    flex
+                    gap-6
+                    justify-center
+                    mb-8
+                    lg:mb-0
+                    ">
+                        <div class="
+                        text-5xl
+                        text-red-600
+                        ">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <div class="
+                        font-roboto
+                        ">
+                            <p class="
+                            font-semibold
+                            text-xl
+                            ">Get access to exclusive deals</p>
+                            <p class="
+                            text-gray-500
+                            ">Only the best deals reach your inbox</p>
+                        </div>
+                    </div>
+                    <div class="
+                    flex items-center
+                    justify-center
+                    gap-4
+                    ">
+                        <input class="
+                        border
+                        border-gray-400
+                        px-4
+                        lg:w-96
+                        h-12
+                        rounded-md
+                        " type="text" placeholder="e.g.example@gmail.com">
+                        <button class="
+                        bg-red-600
+                        text-white
+                        h-12
+                        px-8
+                        rounded-md
+                        ">Notify Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--- search by map --->
+        <section class="
+        bg-gray-100
+        py-8
+        ">
+            <div class="container">
+                <div class="
+                lg:flex
+                lg:justify-between
+                lg:gap-6
+                ">
+                    <div class="
+                    w-1/2
+                    ">
+                        <img class="w-full mx-auto" src="./images/map.png" alt="">
+                    </div>
+                    <div class="
+                    font-roboto
+                    ">
+                        <div class="">
+                            <h2 class="
+                            text-2xl
+                            font-semibold
+                            text-slate-900
+                            lg:text-4xl
+                            ">There's an OYO around Always.</h2>
+                            <p class="
+                            text-gray-500
+                            text-xl
+                            font-light
+                            ">More than 5000 corporate trust us.</p>
+                        </div>
+                        <div class="
+                        flex
+                        mt-5
+                        mb-5
+                        ">
+                            <div class="">
+                                <h2 class="
+                                text-4xl
+                                font-bold
+                                text-slate-900
+                                ">35+</h2>
+                                <p class="
+                                text-gray-500
+                                ">Countries</p>
+                            </div>
+                            <div class="
+                            text-5xl
+                            mt-2
+                            text-slate-900
+                            ">
+                                <i class="fa-solid fa-slash
+                                rotate-[80deg]
+                                "></i>
+                            </div>
+                            <div class="">
+                                <h2 class="
+                                text-4xl
+                                font-bold
+                                text-slate-900
+                                ">178500+</h2>
+                                <p class="
+                                text-gray-500
+                                ">Hotels & Homes</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <ul class="
+                            list-disc
+                            list-inside
+                            flex
+                            flex-wrap
+                            items-center
+                            gap-6
+                            ">
+                                <li class=""><a href="#">Dhaka</a></li>
+                                <li class=""><a href="#">Rajshahi</a></li>
+                                <li class=""><a href="#">Khulna</a></li>
+                                <li class=""><a href="#">Chittagong</a></li>
+                                <li class=""><a href="#">Sylhet</a></li>
+                                <li class=""><a href="#">Rangpur</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    
+    
+    
+    
+
+<!------ jquery ----->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!------ jquery datepicker ----->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<!------ javascript ----->
+<script src="./js/app.js"></script>
 </body>
 </html>
